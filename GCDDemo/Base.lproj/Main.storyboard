@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="GCDDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="II8-bW-5je">
+                                <rect key="frame" x="168" y="28" width="38" height="30"/>
+                                <state key="normal" title="Short"/>
+                                <connections>
+                                    <action selector="shortButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ATH-Cl-QjO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxy-Nz-bMy">
+                                <rect key="frame" x="168" y="89" width="38" height="30"/>
+                                <state key="normal" title="Long"/>
+                                <connections>
+                                    <action selector="longButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Qg0-oE-nVZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMd-Fy-G6Z">
+                                <rect key="frame" x="16" y="149" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gxy-Nz-bMy" firstAttribute="leading" secondItem="II8-bW-5je" secondAttribute="leading" id="25l-gH-kBX"/>
+                            <constraint firstItem="gxy-Nz-bMy" firstAttribute="trailing" secondItem="II8-bW-5je" secondAttribute="trailing" id="77v-7w-cA2"/>
+                            <constraint firstItem="kMd-Fy-G6Z" firstAttribute="top" secondItem="gxy-Nz-bMy" secondAttribute="bottom" constant="30" id="AHv-6I-T2h"/>
+                            <constraint firstItem="II8-bW-5je" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="IGo-VY-ZIP"/>
+                            <constraint firstItem="gxy-Nz-bMy" firstAttribute="top" secondItem="II8-bW-5je" secondAttribute="bottom" constant="31" id="J07-OV-EHv"/>
+                            <constraint firstItem="gxy-Nz-bMy" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="d4c-13-Dhw"/>
+                            <constraint firstItem="kMd-Fy-G6Z" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="mgf-Pb-MzN"/>
+                            <constraint firstItem="II8-bW-5je" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="okU-U5-oQw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kMd-Fy-G6Z" secondAttribute="trailing" id="vVF-yQ-2xk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="kMd-Fy-G6Z" id="lSk-b3-20Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="GCDDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vic-km-tMX">
+                                <rect key="frame" x="168" y="20" width="38" height="30"/>
+                                <state key="normal" title="Short"/>
+                                <connections>
+                                    <action selector="shortButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="RRc-rM-8ul"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYc-55-0hZ">
+                                <rect key="frame" x="168" y="80" width="38" height="30"/>
+                                <state key="normal" title="Long"/>
+                                <connections>
+                                    <action selector="longButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="nkW-4U-yLE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZk-gN-Icb">
+                                <rect key="frame" x="16" y="140" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BZk-gN-Icb" firstAttribute="top" secondItem="dYc-55-0hZ" secondAttribute="bottom" constant="30" id="5Lc-hX-Mai"/>
+                            <constraint firstItem="dYc-55-0hZ" firstAttribute="leading" secondItem="vic-km-tMX" secondAttribute="leading" id="G9G-E8-JIe"/>
+                            <constraint firstItem="BZk-gN-Icb" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="HGe-oI-Cfj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BZk-gN-Icb" secondAttribute="trailing" id="RW5-Nm-jNY"/>
+                            <constraint firstItem="dYc-55-0hZ" firstAttribute="top" secondItem="vic-km-tMX" secondAttribute="bottom" constant="30" id="YKK-fZ-Hld"/>
+                            <constraint firstItem="vic-km-tMX" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="pTs-ok-GaR"/>
+                            <constraint firstItem="dYc-55-0hZ" firstAttribute="trailing" secondItem="vic-km-tMX" secondAttribute="trailing" id="qeo-IS-4KK"/>
+                            <constraint firstItem="vic-km-tMX" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="uFZ-LB-N5S"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="BZk-gN-Icb" id="QNk-Ei-9ge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
